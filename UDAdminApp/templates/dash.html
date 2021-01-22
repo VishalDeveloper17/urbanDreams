@@ -1,0 +1,50 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+{% include 'status.html' %}
+
+<br>
+
+<div class="row">
+	<div class="col-md-5">
+		<h5>Apartment:</h5>
+		<hr>
+		<div class="card card-body">
+			<table class="table table-sm">
+				<tr>
+					<th>ApartmentId</th>
+					<th>Apartment Name</th>
+					<th>Flat Count</th>
+					<th>Floor</th>
+				</tr>
+				{% for apartment in apartments  %}
+				<tr>
+				<td>{{apartment.ap_Id}}</td>
+					<td>{{apartment.ap_name}}</td>
+					<td>{{apartment.flat_count}}</td>
+					<td>{{apartment.floor}}</td></tr>
+					{% endfor %}
+
+				
+			</table>
+		</div>
+	</div>
+
+	<div class="col-md-7">
+		<h5>LAST 5 ORDERS</h5>
+		<hr>
+		<div class="card card-body">
+			<table class="table table-sm">
+								
+		
+			</table>
+		</div>
+	</div>
+
+</div>
+
+{% endblock %}
+
+
+
