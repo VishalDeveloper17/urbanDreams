@@ -1,20 +1,42 @@
-{% extends 'pages/main.html' %}
-{% block content %}
-      
-      <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>urban dreams</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{% static '/css/login.css' %}" />
+
+
+
+
+
+</head>
+<body>
+ 
+  
+
+   <div class="box">
+
+    <dir class="content">
+
+      <h1>LOG IN</h1>
+      <form method="POST" action="/submit/">
+      {% csrf_token %}       
+      <P>User Name: <input type="text" name="unm" placeholder="Enter user name"></P>
+      <p>Password: <input type="Password" name="pwd"></p>
+      <p><input type="submit" name="sub" value="Log In"></p>
+      <p><a href="" >Forget password?</a></p>
+      </form>
+    </dir>
+    
   </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-    {% endblock %}
+
+
+
+  
+
+
+</body>
+</html>
