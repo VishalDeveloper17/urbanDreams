@@ -1,0 +1,35 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #bfa6a4;
+}
+h1{
+	color: blue;
+}
+input{
+	margin: 2px;
+	padding: 10px;
+	width: 200px;
+	border-radius: 7px;
+}
+button{
+	margin: 5px;
+	padding: 5px;
+	background-color: #2e4a2c;
+	border-radius: 7px;
+}
+.container{
+	position:relative;
+	width: 400px;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #3448ad;
+	opacity: .7;
+	t
+}
