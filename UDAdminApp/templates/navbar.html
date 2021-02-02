@@ -30,6 +30,9 @@
     </ul>
   </div>
   <span class="hello-msg"></span>
+  {% if name %}
+  <span><a class="hello-msg" href="">{{name}}</a></span>
+  {% else %}
   <span><a class="hello-msg" href="">Logout</a></span>
-
+{% endif %}
 </nav>
