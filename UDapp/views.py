@@ -19,3 +19,5 @@ def submit(request):
 		return render(request,'dash.html', context)
 		#return redirect('mainpage')
 
+def resource(request):
+	return render(request, 'pages/resource.html')
