@@ -14,13 +14,24 @@ Licence URI: https://www.os-templates.com/template-terms
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="{% static '/css/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+
+<style type="text/css">
+/* DEMO ONLY */
+.container .demo{text-align:center;}
+.container .demo div{padding:8px 0;}
+.container .demo div:nth-child(odd){color:#FFFFFF; background:#CCCCCC;}
+.container .demo div:nth-child(even){color:#FFFFFF; background:#979797;}
+@media screen and (max-width:900px){.container .demo div{margin-bottom:0;}}
+/* DEMO ONLY */
+</style>
+
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- Top Background Image Wrapper -->
-<div class="bgded overlay light" style="background-image:url('images/demo/backgrounds/01.png');"> 
+<div class="bgded overlay light" style="background-image:url('{% static 'img/the-town-01.jpg' %}');"> 
   <!-- ################################################################################################ -->
   <div class="wrapper row0">
     <div id="topbar" class="hoc clear"> 
@@ -38,7 +49,7 @@ Licence URI: https://www.os-templates.com/template-terms
         <ul class="nospace">
           <li><a href="{% url 'index' %}"><i class="fa fa-lg fa-home"></i></a></li>
           <li><a href="#" title="Help Centre"><i class="fa fa-life-bouy"></i></a></li>
-          <li><a href="#" title="Login"><i class="fa fa-lg fa-sign-in"></i></a></li>
+          <li><a href="{% url 'login' %}" title="Login"><i class="fa fa-lg fa-sign-in"></i></a></li>
           <li><a href="#" title="Sign Up"><i class="fa fa-lg fa-edit"></i></a></li>
         </ul>
         <!-- ################################################################################################ -->

@@ -1,42 +1,95 @@
-{% load static %}
+{% extends 'pages/main.html' %}
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>urban dreams</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="{% static '/css/login.css' %}" />
+{% block content %}
 
 
-
-
-
-</head>
-<body>
- 
-  
-
-   <div class="box">
-
-    <dir class="content">
-
-      <h1>LOG IN</h1>
-      <form method="POST" action="/submit/">
-      {% csrf_token %}       
-      <P>User Name: <input type="text" name="unm" placeholder="Enter user name"></P>
-      <p>Password: <input type="Password" name="pwd"></p>
-      <p><input type="submit" name="sub" value="Log In"></p>
-      <p><a href="" >Forget password?</a></p>
-      </form>
-    </dir>
-    
+<div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Ipsum</a></li>
+      <li><a href="#">Dolor</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
   </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
+      <h2>Half</h2>
+      <!-- ################################################################################################ -->
+      <div class="group btmspace-50 demo">
+        <div class="one_half first">1/2</div>
+        <div class="one_half">1/2</div>
+      </div>
+      <!-- ################################################################################################ -->
+      <h2>Quarter</h2>
+      <!-- ################################################################################################ -->
+      <div class="group btmspace-50 demo">
+        <div class="one_quarter first">1/4</div>
+        <div class="one_quarter">1/4</div>
+        <div class="one_quarter">1/4</div>
+        <div class="one_quarter">1/4</div>
+      </div>
+      <div class="group btmspace-50 demo">
+        <div class="one_quarter first">1/4</div>
+        <div class="one_quarter">1/4</div>
+        <div class="two_quarter">2/4 or 1/2</div>
+      </div>
+      <div class="group btmspace-50 demo">
+        <div class="one_quarter first">1/4</div>
+        <div class="three_quarter">3/4</div>
+      </div>
+      <!-- ################################################################################################ -->
+      <h2>Third</h2>
+      <!-- ################################################################################################ -->
+      <div class="group btmspace-50 demo">
+        <div class="one_third first">1/3</div>
+        <div class="one_third">1/3</div>
+        <div class="one_third">1/3</div>
+      </div>
+      <div class="group demo">
+        <div class="one_third first">1/3</div>
+        <div class="two_third">2/3</div>
+      </div>
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/04.png');">
+  <section class="hoc cta clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Condimentum ullamcorper vehicula</h6>
+      <p>Velit vel pulvinar elit feugiat vel vivamus venenatis nunc ac</p>
+    </div>
+    <form method="post" action="#">
+      <fieldset>
+        <legend>Newsletter:</legend>
+        <input class="btmspace-15" type="text" value="" placeholder="Enter Your Email Here&hellip;">
+        <button type="submit" value="submit">Submit</button>
+      </fieldset>
+    </form>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
 
-
-
-  
-
-
-</body>
-</html>
+{% endblock %}
