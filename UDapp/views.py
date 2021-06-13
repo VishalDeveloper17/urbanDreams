@@ -9,6 +9,8 @@ def login(request):
 	return render(request,'pages/login.html')
 def signup(request): 
 	return render(request,'pages/signup.html')
+def why_ud(request): 
+	return render(request,'pages/reserve/Why Urban Dreams.html')
 
 def submit(request):
 	if request.method == 'POST':
